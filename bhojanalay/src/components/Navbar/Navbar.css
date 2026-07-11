@@ -1,0 +1,273 @@
+html{
+  scroll-behavior: smooth;
+}
+
+.nav-links a{
+
+  text-decoration: none;
+
+  color: inherit;
+
+}
+
+.navbar{
+
+  width: 100%;
+
+  height: 85px;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 0 70px;
+
+  background-color: white;
+
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 100;
+
+}
+
+.logo{
+
+  font-size: 34px;
+
+  font-weight: bold;
+
+  color: #ff4d00;
+
+}
+
+.location{
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  font-size: 16px;
+
+  color: #444;
+
+}
+
+.location-icon{
+
+  color: #ff4d00;
+
+}
+
+.nav-links{
+
+  display: flex;
+
+  gap: 35px;
+
+  list-style: none;
+
+}
+
+.nav-links li{
+
+  cursor: pointer;
+
+  font-size: 16px;
+
+  transition: 0.3s;
+
+}
+
+.nav-links li:hover{
+
+  color: #ff4d00;
+
+}
+
+.nav-icons{
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+}
+
+.icon{
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+}
+
+.cart-container{
+
+  position: relative;
+
+}
+
+.cart-count{
+
+  position: absolute;
+
+  top: -10px;
+
+  right: -10px;
+
+  width: 20px;
+
+  height: 20px;
+
+  border-radius: 50%;
+
+  background-color: #ff4d00;
+
+  color: white;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 12px;
+
+}
+
+.signin-btn{
+
+  padding: 12px 24px;
+
+  border: none;
+
+  background-color: #ff4d00;
+
+  color: white;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+}
+
+/* MOBILE MENU BUTTON */
+
+.menu-toggle{
+
+  display: none;
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 900px){
+
+  .navbar{
+
+    padding: 0 20px;
+
+  }
+
+  .location{
+
+    display: none;
+
+  }
+
+  .menu-toggle{
+
+    display: block;
+
+  }
+
+  .nav-links{
+
+    position: absolute;
+
+    top: 85px;
+
+    left: 0;
+
+    width: 100%;
+
+    background: white;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 30px 0;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    display: none;
+
+  }
+
+  .nav-links.active{
+
+    display: flex;
+
+  }
+
+  .nav-icons{
+
+    gap: 15px;
+
+  }
+
+  .signin-btn{
+
+    padding: 10px 18px;
+
+    font-size: 14px;
+
+  }
+
+}
+
+@media(max-width: 600px){
+
+  .logo{
+
+    font-size: 26px;
+
+  }
+
+  .signin-btn{
+
+    display: none;
+
+  }
+
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-name {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
