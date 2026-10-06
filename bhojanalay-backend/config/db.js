@@ -1,4 +1,12 @@
 import mongoose from "mongoose";
+import dns from "dns";
+
+// Ensure DNS SRV queries resolve reliably on Windows
+try {
+  dns.setServers(["8.8.8.8", "1.1.1.1"]);
+} catch (e) {
+  // fallback if custom DNS set fails
+}
 
 const connectDB = async () => {
   try {

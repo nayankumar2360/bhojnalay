@@ -108,6 +108,34 @@
 
 }
 
+.password-input-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.auth-right .password-input-container input {
+  margin-bottom: 0;
+  padding-right: 45px;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #777;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.password-toggle-icon:hover {
+  color: #ff4d00;
+}
+
+
 .auth-right button{
 
   width: 100%;
